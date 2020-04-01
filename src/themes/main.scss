@@ -1,0 +1,102 @@
+#header {
+    background: #fff;
+    height: 5em;
+    padding: 5px;
+
+    .location_selection{
+        width: 40%;
+    }
+}
+
+#content {
+    .location_title {
+        font-size: 1.6em;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        color: #11569B;
+        text-align: left;
+        background-color: #fff;
+    }
+
+    background: #fff;
+    margin-top: -0.5em;
+
+    .details_title {
+        background: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.46, #127EC3),
+            color-stop(0.6, #3591CC)
+        ) !important;
+        padding: 0.3em !important;
+        border-top: 1px solid #509adc;
+        font-weight: 600;
+        margin-top: 0;
+        clear: both;
+        text-shadow: #000 1px 1px 1px;
+        color: #ffffff;
+        text-align: left;
+        font-size:1em;
+    }
+
+    table.weather_list {
+        margin: 1px;
+        width: 99%;
+        border-spacing: 0;
+        clear: both;
+
+        .odd {
+            background-color: #ebf2f6;
+        }
+
+        .even {
+            background-color:#ffffff;
+        }
+
+        th.table_date_time {
+            padding: 2px;
+            text-align: left;
+            font-size: 1em;
+            vertical-align: top;
+            font-weight: 600;
+            background-color: #DEE3E6;
+            color: #127EC3;
+        }
+
+        td {
+            padding: 1px 2px;
+            vertical-align: middle;
+            font-size: 0.9em;
+
+            span.temp {
+                display: block;
+                font-weight: bold;
+                border-radius: 5px;
+                width: 2em;
+                margin: 0 auto;
+                background-color: #FBC25E;
+                text-align: center;
+                padding: 5px;
+                white-space: nowrap;
+            }
+        }
+
+        td.info {
+            font-size:0.8em;
+        }
+
+        .day_split{
+            th, td {
+                border-top: 2px solid #127EC3 !important;
+            }
+        }
+    }
+}
+
+.errorInfo{
+    padding-left: 5px;
+    color: red;
+    font-weight: 600;
+    font-size: 1.1em;
+}
