@@ -3,7 +3,7 @@ import CommonFunc from '../utilities/CommonFunc';
 
 const HourInfoCard = (props) => {
     const {hour_info, data_index} = props;
-    const [localDate, setLocalDate] = useState(new Date(hour_info.timestamp*1000));
+    const [localDate, setLocalDate] = useState(CommonFunc.getDateTimeValuesFromStr(hour_info.local_time));
 
     function getClassForHourInfoCard(index, is_first_row){
         let class_first_row_of_day = '';
